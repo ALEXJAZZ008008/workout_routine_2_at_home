@@ -160,7 +160,7 @@ Design: full-body strength/hypertrophy, home dumbbells + stable dining chair; st
 \arrayrulecolor{grid}
 \setlength{\arrayrulewidth}{0.45pt}
 {\fontsize{9.0}{10.6}\selectfont
-\renewcommand{\arraystretch}{2.45}
+\renewcommand{\arraystretch}{3.30}
 \setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}m{9.65cm} C{1.45cm} C{1.65cm}!{\color{blockrule}\vrule width 0.65pt}C{1.45cm} C{1.75cm}@{}}
 \rowcolor{headfill}\textbf{Exercise} & \textbf{Man kg} & \textbf{Man reps} & \textbf{Woman kg} & \textbf{Woman reps} \\
@@ -202,7 +202,7 @@ Side-lying DB hip abduction & - & - & 1x 2.5 & 10/10 \\
 {\fontsize{8.15}{9.8}\selectfont\color{muted}
 These are first-session calibration loads for the home variants.\\[0.13cm]
 If a proposed load is clearly inappropriate during the first home session, calibrate it to a technically clean load at approximately 1 RIR before normal progression begins.\\[0.13cm]
-For subsequent trackers, starting values carry forward from the final actual load and reps of the previous 12-session tracker.
+For subsequent trackers, starting values carry forward from the final actual load and reps of the previous 8-session tracker.
 }
 
 %=========================================================
@@ -222,100 +222,54 @@ For subsequent trackers, starting values carry forward from the final actual loa
 \arrayrulecolor{grid}
 \setlength{\arrayrulewidth}{0.45pt}
 
-% Each session: 6.9 mm load cell + 3 x 3.1 mm base rep columns.
+% Each session: 8.5 mm load cell + 3 x 5.0 mm rep columns.
 \newcommand{\SessionHead}[1]{\multicolumn{4}{c|}{\cellcolor{headfill}\rule{0pt}{4.05mm}\textbf{\fontsize{7.5}{8.2}\selectfont S#1}}}
 \newcommand{\SessionSubHead}{\cellcolor{headfill}\rule{0pt}{4.05mm}\textbf{\fontsize{5.7}{6.2}\selectfont kg} & \multicolumn{3}{c|}{\cellcolor{headfill}\rule{0pt}{4.05mm}\textbf{\fontsize{5.7}{6.2}\selectfont plan}}}
 \newcommand{\SessionActualHead}{\cellcolor{headfill}\rule{0pt}{4.05mm} & \multicolumn{3}{c|}{\cellcolor{headfill}\rule{0pt}{4.05mm}\textbf{\fontsize{5.7}{6.2}\selectfont actual}}}
 
 % Three-set row: three plan cells and three actual cells.
 \newcommand{\LogRowThree}[2]{%
-\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1} & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & \\
-\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
-& & \rule{0pt}{4.55mm} & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & \\
+\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1} & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}
+ &  & \rule{0pt}{4.55mm} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
 \hline
 }
 \newcommand{\LogRowThreeNoBottom}[2]{%
-\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1} & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & \\
-\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
-& & \rule{0pt}{4.55mm} & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & \\
+\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1} & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} &  &  &  \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}
+ &  & \rule{0pt}{4.55mm} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
 }
 
 % Two-set row: same total rep-entry width, one internal divider, hence two cells.
 \newcommand{\TwoRepCells}{%
 \multicolumn{3}{c|}{%
 \begin{tikzpicture}[baseline=(current bounding box.center)]
-  \path[use as bounding box] (0,0) rectangle (9.3mm,4.55mm);
-  \draw[color=grid,line width=0.45pt] (4.65mm,0) -- (4.65mm,4.55mm);
+  \path[use as bounding box] (0,0) rectangle (15mm,4.55mm);
+  \draw[color=grid,line width=0.45pt] (7.5mm,0) -- (7.5mm,4.55mm);
 \end{tikzpicture}%
 }%
 }
 
 \newcommand{\LogRowTwo}[2]{%
-\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1}
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells \\
-\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells \\
+\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1} & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}
+ &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells \\
 \hline
 }
 \newcommand{\LogRowTwoNoBottom}[2]{%
-\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1}
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells
-& \multirow{2}{*}{#2} & \TwoRepCells \\
-\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells
-& & \TwoRepCells \\
+\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1} & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells & \multirow{2}{*}{#2} & \TwoRepCells \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}
+ &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells &  & \TwoRepCells \\
 }
 \newcommand{\BlockSeparator}{\noalign{\color{blockrule}\hrule height 0.75pt\color{ink}}}
 
 \newcommand{\LogTableHeader}{%
 \cellcolor{headfill}\rule{0pt}{4.05mm} &
-\SessionHead{1} & \SessionHead{2} & \SessionHead{3} & \SessionHead{4} & \SessionHead{5} & \SessionHead{6} & \SessionHead{7} & \SessionHead{8} & \SessionHead{9} & \SessionHead{10} & \SessionHead{11} & \SessionHead{12} \\
-\cline{2-49}
-\cellcolor{headfill}\rule{0pt}{4.05mm} & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead \\
-\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
-\cellcolor{headfill}\rule{0pt}{4.05mm}\hspace{2mm}\textbf{\fontsize{7.4}{8.2}\selectfont Exercise} & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead \\
+\SessionHead{1} & \SessionHead{2} & \SessionHead{3} & \SessionHead{4} & \SessionHead{5} & \SessionHead{6} & \SessionHead{7} & \SessionHead{8} \\
+\cline{2-33}
+\cellcolor{headfill}\rule{0pt}{4.05mm} & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}
+\cellcolor{headfill}\rule{0pt}{4.05mm}\hspace{2mm}\textbf{\fontsize{7.4}{8.2}\selectfont Exercise} & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead \\
 \hline
 }
 
@@ -323,7 +277,7 @@ For subsequent trackers, starting values carry forward from the final actual loa
 {\fontsize{6.65}{7.45}\selectfont
 {\fontsize{20}{24}\selectfont\bfseries Training Log - Man}\par
 \vspace{0.85cm}
-\noindent\begin{tabular}{|L{77mm}|*{12}{C{6.9mm}|C{3.1mm}|C{3.1mm}|C{3.1mm}|}}
+\noindent\begin{tabular}{|L{77mm}|*{8}{C{8.5mm}|C{5.0mm}|C{5.0mm}|C{5.0mm}|}}
 \hline
 \LogTableHeader
 \LogRowThree{DB sumo deadlift}{2x}
@@ -352,7 +306,7 @@ For subsequent trackers, starting values carry forward from the final actual loa
 {\fontsize{6.65}{7.45}\selectfont
 {\fontsize{20}{24}\selectfont\bfseries Training Log - Woman}\par
 \vspace{0.85cm}
-\noindent\begin{tabular}{|L{77mm}|*{12}{C{6.9mm}|C{3.1mm}|C{3.1mm}|C{3.1mm}|}}
+\noindent\begin{tabular}{|L{77mm}|*{8}{C{8.5mm}|C{5.0mm}|C{5.0mm}|C{5.0mm}|}}
 \hline
 \LogTableHeader
 \LogRowThree{DB sumo deadlift}{2x}
@@ -408,28 +362,28 @@ For subsequent trackers, starting values carry forward from the final actual loa
 {\fontsize{9.2}{11}\selectfont
 \begin{tabular}{|>{\bfseries}C{4.15cm}|C{4.32cm}|C{4.32cm}|C{4.32cm}|}
 \hline
-\rowcolor{headfill}\rule{0pt}{9.2mm}\raisebox{3.2mm}[0pt][0pt]{Working load} & \textbf{6 reps @ 40\%} & \textbf{4 reps @ 60\%} & \textbf{2 reps @ 80\%} \\
+\rowcolor{headfill}\rule{0pt}{10.65mm}\raisebox{3.9mm}[0pt][0pt]{Working load} & \textbf{6 reps @ 40\%} & \textbf{4 reps @ 60\%} & \textbf{2 reps @ 80\%} \\
 \hline
-\rule[-3.6mm]{0pt}{9.2mm}2.5 kg & - & - & - \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}5 kg & 2.5 kg & 2.5 kg & 2.5 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}7.5 kg & 5 kg & 5 kg & 5 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}10 kg & 5 kg & 7.5 kg & 7.5 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}12.5 kg & 5 kg & 7.5 kg & 10 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}15 kg & 7.5 kg & 10 kg & 12.5 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}17.5 kg & 7.5 kg & 12.5 kg & 15 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}20 kg & 10 kg & 12.5 kg & 17.5 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}22.5 kg & 10 kg & 15 kg & 20 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}25 kg & 10 kg & 15 kg & 20 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}27.5 kg & 12.5 kg & 17.5 kg & 22.5 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}30 kg & 12.5 kg & 20 kg & 25 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}32.5 kg & 15 kg & 20 kg & 27.5 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}35 kg & 15 kg & 22.5 kg & 30 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}37.5 kg & 15 kg & 22.5 kg & 30 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}40 kg & 17.5 kg & 25 kg & 32.5 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}42.5 kg & 17.5 kg & 27.5 kg & 35 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}45 kg & 20 kg & 27.5 kg & 37.5 kg \\
-\rule[-3.6mm]{0pt}{9.2mm}47.5 kg & 20 kg & 30 kg & 40 kg \\
-\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}50 kg & 20 kg & 30 kg & 40 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}2.5 kg & - & - & - \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}5 kg & 2.5 kg & 2.5 kg & 2.5 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}7.5 kg & 5 kg & 5 kg & 5 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}10 kg & 5 kg & 7.5 kg & 7.5 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}12.5 kg & 5 kg & 7.5 kg & 10 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}15 kg & 7.5 kg & 10 kg & 12.5 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}17.5 kg & 7.5 kg & 12.5 kg & 15 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}20 kg & 10 kg & 12.5 kg & 17.5 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}22.5 kg & 10 kg & 15 kg & 20 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}25 kg & 10 kg & 15 kg & 20 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}27.5 kg & 12.5 kg & 17.5 kg & 22.5 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}30 kg & 12.5 kg & 20 kg & 25 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}32.5 kg & 15 kg & 20 kg & 27.5 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}35 kg & 15 kg & 22.5 kg & 30 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}37.5 kg & 15 kg & 22.5 kg & 30 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}40 kg & 17.5 kg & 25 kg & 32.5 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}42.5 kg & 17.5 kg & 27.5 kg & 35 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}45 kg & 20 kg & 27.5 kg & 37.5 kg \\
+\rule[-4.2mm]{0pt}{10.65mm}47.5 kg & 20 kg & 30 kg & 40 kg \\
+\rowcolor{blockfill}\rule[-4.2mm]{0pt}{10.65mm}50 kg & 20 kg & 30 kg & 40 kg \\
 \hline
 \end{tabular}
 }
