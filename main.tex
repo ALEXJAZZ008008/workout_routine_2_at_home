@@ -1,0 +1,443 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fix-cm}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=20mm]{geometry}
+\IfFileExists{sourcesans.sty}{%
+  \usepackage[default]{sourcesans}%
+}{%
+  \usepackage[default]{sourcesanspro}%
+}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{calc}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1020,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench}
+\tolerance=1600
+\hbadness=1600
+\emergencystretch=1.2em
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+\definecolor{ink}{RGB}{31,34,37}
+\definecolor{muted}{RGB}{103,115,126}
+\definecolor{headfill}{RGB}{229,235,240}
+\definecolor{blockfill}{RGB}{243,245,247}
+\definecolor{grid}{RGB}{188,199,208}
+\definecolor{blockrule}{RGB}{119,139,153}
+\definecolor{panelbg}{RGB}{247,249,250}
+\color{ink}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+
+\begin{document}
+
+%=========================================================
+% PAGE 1: WORKOUT
+\begin{center}
+{\fontsize{26}{31}\selectfont\bfseries Home Dumbbell Workout}
+\end{center}
+
+\vspace{0.42cm}
+
+\noindent
+\begin{minipage}[t]{0.68\linewidth}
+{\fontsize{14}{17}\selectfont\bfseries WORKOUT}
+\end{minipage}%
+\begin{minipage}[t]{0.32\linewidth}
+\raggedleft
+\tikz[baseline=(freq.base)]{%
+  \node[draw=grid, line width=0.7pt, rounded corners=4.5mm,
+        inner xsep=9mm, inner ysep=2.5mm,
+        text=muted, font=\bfseries\fontsize{9.5}{11}\selectfont] (freq) {2x per week};}
+\end{minipage}
+
+\vspace{0.10cm}
+{\fontsize{7.9}{9.4}\selectfont\color{muted}
+Rounds: work continuously with no scheduled rest. Shared exercises alternate partners; in the final individual exercise slot in Block D, the man performs dumbbell shrugs and the woman performs side-lying dumbbell hip abduction. Move on as soon as the set and necessary setup are complete.\\[0.08cm]
+For the woman's hip abduction, one programmed set consists of completing the prescribed repetitions on both sides.\\[0.08cm]
+Warm-up (Block A only, before first work set of each exercise): perform 6/4/2 reps at $\sim$40/60/80\% of work load; round up; if this would equal or exceed the working load, use the heaviest available dumbbell below it.
+}
+
+\vspace{0.20cm}
+\arrayrulecolor{grid}
+\setlength{\arrayrulewidth}{0.42pt}
+\renewcommand{\arraystretch}{1.82}
+\setlength{\tabcolsep}{7pt}
+{\fontsize{9.15}{10.8}\selectfont
+\begin{tabular}{@{}L{14.458cm} C{2.05cm}@{}}
+\rowcolor{headfill}\textbf{Exercise} & \textbf{Reps} \\
+\rowcolor{blockfill}\multicolumn{2}{@{}l@{}}{\hspace{7pt}\textbf{\color{muted}BLOCK A \;|\; 3 ROUNDS}} \\
+Neutral-grip dumbbell sumo deadlift from floor & 5--8 \\
+\hline
+Dumbbell floor press & 8--12 \\
+\hline
+Bilateral sumo-stance neutral-grip DB dead-stop row & 8--12 \\
+\hline
+Seated back-supported dumbbell overhead press & 8--12 \\
+\rowcolor{blockfill}\multicolumn{2}{@{}l@{}}{\hspace{7pt}\textbf{\color{muted}BLOCK B \;|\; 3 ROUNDS}} \\
+Seated dumbbell knee extension & 8--12 \\
+\hline
+Dumbbell pullover & 8--12 \\
+\hline
+Prone dumbbell leg curl & 8--12 \\
+\hline
+Supported dumbbell calf raise & 8--12 \\
+\rowcolor{blockfill}\multicolumn{2}{@{}l@{}}{\hspace{7pt}\textbf{\color{muted}BLOCK C \;|\; 2 ROUNDS}} \\
+Seated back-supported bilateral supinating DB curl & 8--12 \\
+\hline
+Dumbbell floor glute bridge & 8--12 \\
+\hline
+Seated back-supported dumbbell lateral raise & 10--20 \\
+\hline
+Lying bilateral dumbbell triceps extension & 8--12 \\
+\rowcolor{blockfill}\multicolumn{2}{@{}l@{}}{\hspace{7pt}\textbf{\color{muted}BLOCK D \;|\; 2 ROUNDS}} \\
+Seated bent-over bilateral dumbbell reverse fly & 10--20 \\
+\hline
+Supine dumbbell-loaded abdominal crunch & 8--12 \\
+\hline
+Dumbbell shrug (man only) & 8--12 \\
+\hline
+Side-lying dumbbell hip abduction (woman only) & 10--20 per side \\
+\end{tabular}\par
+}
+
+\vspace{0.31cm}
+\begin{tcolorbox}[
+  enhanced,
+  colback=panelbg,
+  colframe=grid,
+  boxrule=0.65pt,
+  arc=3.0mm,
+  left=3.0mm,right=3.0mm,top=2.0mm,bottom=2.0mm,
+  boxsep=0mm,
+  before skip=0pt,after skip=0pt
+]
+{\fontsize{10.2}{11.4}\selectfont\bfseries PROGRESSION}\par\vspace{0.14cm}
+{\fontsize{7.05}{8.25}\selectfont
+3 sets (+1 total): 8/8/8 $\to$ 9/8/8 $\to$ 9/9/8 $\to$ 9/9/9.\quad
+2 sets (+1 total): 8/8 $\to$ 9/8 $\to$ 9/9.\\[-1.4pt]
+10--20 (+2 total): 10/10 $\to$ 11/11 $\to$ 12/12. Continue the same pattern to the top of each range.\\[-1.4pt]
+Effort: $\sim$1 RIR on working sets; final set may reach 0--1 RIR. Last rep hard but technically clean.\\[-1.4pt]
+At ceiling: increase to the next load and plan the range minimum. Actual reps may initially fall below the range.\\[-1.4pt]
+If the planned target is missed, record actual and repeat the same target until achieved; then resume normal progression.\\[-1.4pt]
+A target missed at the programmed pace counts as a miss; do not add rest solely to achieve it.\\[-1.4pt]
+Individual stalls are tolerated while other exercises progress; do not reset or alter that exercise automatically.\\[-1.4pt]
+Recovery: if $\geq$50\% of exercises miss planned progression or regress for 3 consecutive sessions, skip the next scheduled session.\\[-1.4pt]
+Hip abduction: each programmed set includes both sides; both sides must achieve the planned target before progression.
+}
+\end{tcolorbox}
+
+\vspace{0.34cm}
+\noindent\begin{minipage}{\linewidth}
+{\color{grid}\hrule height 0.45pt}
+\vspace{0.18cm}
+{\fontsize{6.05}{7.2}\selectfont\color{muted}
+Design: full-body strength/hypertrophy, home dumbbells + stable dining chair; stable, repeatable movements, objective progression, minimal balance/bodyweight demand, optional household supports, $\sim$85-min two-person sessions at rep ceilings.
+}
+\end{minipage}
+
+%=========================================================
+% PAGE 2: STARTING LOADS
+\clearpage
+\begin{center}
+{\fontsize{22}{26}\selectfont\bfseries STARTING LOAD AND REPS}
+\end{center}
+
+\vspace{0.34cm}
+\noindent\hfill{\fontsize{8.6}{10.1}\selectfont\color{muted}kg = per dumbbell}
+
+\vspace{0.30cm}
+\arrayrulecolor{grid}
+\setlength{\arrayrulewidth}{0.45pt}
+{\fontsize{9.0}{10.6}\selectfont
+\renewcommand{\arraystretch}{2.45}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}m{9.65cm} C{1.45cm} C{1.65cm}!{\color{blockrule}\vrule width 0.65pt}C{1.45cm} C{1.75cm}@{}}
+\rowcolor{headfill}\textbf{Exercise} & \textbf{Man kg} & \textbf{Man reps} & \textbf{Woman kg} & \textbf{Woman reps} \\
+Neutral-grip DB sumo deadlift from floor & 2x 20.0 & 5/5/5 & 2x 15.0 & 5/5/5 \\
+\hline
+DB floor press & 2x 15.0 & 8/8/8 & 2x 7.5 & 8/8/8 \\
+\hline
+Bilateral sumo-stance neutral-grip DB dead-stop row & 2x 12.5 & 8/8/8 & 2x 7.5 & 8/8/8 \\
+\hline
+Seated back-supported DB overhead press & 2x 7.5 & 8/8/8 & 2x 5.0 & 8/8/8 \\
+\hline
+Seated DB knee extension & 1x 10.0 & 8/8/8 & 1x 7.5 & 8/8/8 \\
+\hline
+DB pullover & 1x 10.0 & 8/8/8 & 1x 5.0 & 8/8/8 \\
+\hline
+Prone DB leg curl & 1x 7.5 & 8/8/8 & 1x 5.0 & 8/8/8 \\
+\hline
+Supported DB calf raise & 1x 20.0 & 8/8/8 & 1x 12.5 & 8/8/8 \\
+\hline
+Seated back-supported bilateral supinating DB curl & 2x 7.5 & 8/8 & 2x 5.0 & 8/8 \\
+\hline
+DB floor glute bridge & 1x 35.0 & 8/8 & 1x 25.0 & 8/8 \\
+\hline
+Seated back-supported DB lateral raise & 2x 2.5 & 10/10 & 2x 2.5 & 10/10 \\
+\hline
+Lying bilateral DB triceps extension & 1x 12.5 & 8/8 & 1x 7.5 & 8/8 \\
+\hline
+Seated bent-over bilateral DB reverse fly & 2x 2.5 & 10/10 & 2x 2.5 & 10/10 \\
+\hline
+Supine DB-loaded abdominal crunch & 1x 7.5 & 8/8 & 1x 5.0 & 8/8 \\
+\hline
+DB shrug & 2x 25.0 & 8/8 & - & - \\
+\hline
+Side-lying DB hip abduction & - & - & 1x 2.5 & 10/10 \\
+\end{tabular}\par
+}
+
+\vspace{0.48cm}
+{\fontsize{8.15}{9.8}\selectfont\color{muted}
+These are first-session calibration loads for the home variants.\\[0.13cm]
+If a proposed load is clearly inappropriate during the first home session, calibrate it to a technically clean load at approximately 1 RIR before normal progression begins.\\[0.13cm]
+For subsequent trackers, starting values carry forward from the final actual load and reps of the previous 12-session tracker.
+}
+
+%=========================================================
+% PAGES 3-4: TRAINING LOGS, NATIVE LANDSCAPE A4
+\clearpage
+\setlength{\paperwidth}{297mm}
+\setlength{\paperheight}{210mm}
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+\newgeometry{left=8mm,right=8mm,top=8mm,bottom=8mm}
+\setlength{\textwidth}{281mm}
+\setlength{\linewidth}{281mm}
+\setlength{\columnwidth}{281mm}
+\hsize=281mm
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1}
+\arrayrulecolor{grid}
+\setlength{\arrayrulewidth}{0.45pt}
+
+% Each session: 6.9 mm load cell + 3 x 3.1 mm base rep columns.
+\newcommand{\SessionHead}[1]{\multicolumn{4}{c|}{\cellcolor{headfill}\rule{0pt}{4.05mm}\textbf{\fontsize{7.5}{8.2}\selectfont S#1}}}
+\newcommand{\SessionSubHead}{\cellcolor{headfill}\rule{0pt}{4.05mm}\textbf{\fontsize{5.7}{6.2}\selectfont kg} & \multicolumn{3}{c|}{\cellcolor{headfill}\rule{0pt}{4.05mm}\textbf{\fontsize{5.7}{6.2}\selectfont plan}}}
+\newcommand{\SessionActualHead}{\cellcolor{headfill}\rule{0pt}{4.05mm} & \multicolumn{3}{c|}{\cellcolor{headfill}\rule{0pt}{4.05mm}\textbf{\fontsize{5.7}{6.2}\selectfont actual}}}
+
+% Three-set row: three plan cells and three actual cells.
+\newcommand{\LogRowThree}[2]{%
+\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1} & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
+& & \rule{0pt}{4.55mm} & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & \\
+\hline
+}
+\newcommand{\LogRowThreeNoBottom}[2]{%
+\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1} & \rule{0pt}{4.55mm}\multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & & \multirow{2}{*}{#2} & & & \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
+& & \rule{0pt}{4.55mm} & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & \\
+}
+
+% Two-set row: same total rep-entry width, one internal divider, hence two cells.
+\newcommand{\TwoRepCells}{%
+\multicolumn{3}{c|}{%
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+  \path[use as bounding box] (0,0) rectangle (9.3mm,4.55mm);
+  \draw[color=grid,line width=0.45pt] (4.65mm,0) -- (4.65mm,4.55mm);
+\end{tikzpicture}%
+}%
+}
+
+\newcommand{\LogRowTwo}[2]{%
+\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1}
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells \\
+\hline
+}
+\newcommand{\LogRowTwoNoBottom}[2]{%
+\multirow{2}{77mm}{\hspace{2mm}\raggedright\arraybackslash #1}
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells
+& \multirow{2}{*}{#2} & \TwoRepCells \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells
+& & \TwoRepCells \\
+}
+\newcommand{\BlockSeparator}{\noalign{\color{blockrule}\hrule height 0.75pt\color{ink}}}
+
+\newcommand{\LogTableHeader}{%
+\cellcolor{headfill}\rule{0pt}{4.05mm} &
+\SessionHead{1} & \SessionHead{2} & \SessionHead{3} & \SessionHead{4} & \SessionHead{5} & \SessionHead{6} & \SessionHead{7} & \SessionHead{8} & \SessionHead{9} & \SessionHead{10} & \SessionHead{11} & \SessionHead{12} \\
+\cline{2-49}
+\cellcolor{headfill}\rule{0pt}{4.05mm} & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead & \SessionSubHead \\
+\cline{3-5}\cline{7-9}\cline{11-13}\cline{15-17}\cline{19-21}\cline{23-25}\cline{27-29}\cline{31-33}\cline{35-37}\cline{39-41}\cline{43-45}\cline{47-49}
+\cellcolor{headfill}\rule{0pt}{4.05mm}\hspace{2mm}\textbf{\fontsize{7.4}{8.2}\selectfont Exercise} & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead & \SessionActualHead \\
+\hline
+}
+
+\newcommand{\ManLog}{%
+{\fontsize{6.65}{7.45}\selectfont
+{\fontsize{20}{24}\selectfont\bfseries Training Log - Man}\par
+\vspace{0.85cm}
+\noindent\begin{tabular}{|L{77mm}|*{12}{C{6.9mm}|C{3.1mm}|C{3.1mm}|C{3.1mm}|}}
+\hline
+\LogTableHeader
+\LogRowThree{DB sumo deadlift}{2x}
+\LogRowThree{DB floor press}{2x}
+\LogRowThree{DB dead-stop row}{2x}
+\LogRowThreeNoBottom{Seated DB OHP}{2x}
+\BlockSeparator
+\LogRowTwo{Seated DB knee extension}{1x}
+\LogRowTwo{DB pullover}{1x}
+\LogRowTwo{Prone DB leg curl}{1x}
+\LogRowTwoNoBottom{Supported DB calf raise}{1x}
+\BlockSeparator
+\LogRowTwo{Seated supinating DB curl}{2x}
+\LogRowTwo{DB glute bridge}{1x}
+\LogRowTwo{Seated DB lateral raise}{2x}
+\LogRowTwoNoBottom{Lying DB triceps extension}{2x}
+\BlockSeparator
+\LogRowTwo{Seated bent-over DB reverse fly}{2x}
+\LogRowTwo{DB-loaded crunch}{1x}
+\LogRowTwoNoBottom{DB shrug}{2x}
+\hline
+\end{tabular}
+}}
+
+\newcommand{\WomanLog}{%
+{\fontsize{6.65}{7.45}\selectfont
+{\fontsize{20}{24}\selectfont\bfseries Training Log - Woman}\par
+\vspace{0.85cm}
+\noindent\begin{tabular}{|L{77mm}|*{12}{C{6.9mm}|C{3.1mm}|C{3.1mm}|C{3.1mm}|}}
+\hline
+\LogTableHeader
+\LogRowThree{DB sumo deadlift}{2x}
+\LogRowThree{DB floor press}{2x}
+\LogRowThree{DB dead-stop row}{2x}
+\LogRowThreeNoBottom{Seated DB OHP}{2x}
+\BlockSeparator
+\LogRowTwo{Seated DB knee extension}{1x}
+\LogRowTwo{DB pullover}{1x}
+\LogRowTwo{Prone DB leg curl}{1x}
+\LogRowTwoNoBottom{Supported DB calf raise}{1x}
+\BlockSeparator
+\LogRowTwo{Seated supinating DB curl}{2x}
+\LogRowTwo{DB glute bridge}{1x}
+\LogRowTwo{Seated DB lateral raise}{2x}
+\LogRowTwoNoBottom{Lying DB triceps extension}{2x}
+\BlockSeparator
+\LogRowTwo{Seated bent-over DB reverse fly}{2x}
+\LogRowTwo{DB-loaded crunch}{1x}
+\LogRowTwoNoBottom{Side-lying DB hip abduction}{1x}
+\hline
+\end{tabular}
+}}
+
+\ManLog
+\clearpage
+\WomanLog
+
+%=========================================================
+% PAGE 5: WARM-UP LOADS, RETURN TO PORTRAIT A4
+\clearpage
+\setlength{\paperwidth}{210mm}
+\setlength{\paperheight}{297mm}
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+\restoregeometry
+\hsize=\textwidth
+\setlength{\linewidth}{\textwidth}
+\setlength{\columnwidth}{\textwidth}
+
+\newgeometry{left=18mm,right=18mm,top=13mm,bottom=15mm}
+\begin{center}
+{\fontsize{22}{26}\selectfont\bfseries Warm-up Loads}\\[0.42cm]
+{\fontsize{8.7}{10.4}\selectfont\color{muted} Block A: 6 / 4 / 2 reps at $\sim$40 / 60 / 80\% of working load}\\[0.12cm]
+{\fontsize{8.3}{10}\selectfont\color{muted} Round each warm-up load up to the next available dumbbell. If this would equal or exceed the working load, use the heaviest available dumbbell below the working load.}
+\end{center}
+
+\vspace{0.10cm}
+\arrayrulecolor{grid}
+\setlength{\arrayrulewidth}{0.55pt}
+\setlength{\tabcolsep}{0pt}
+\begin{center}
+{\fontsize{9.2}{11}\selectfont
+\begin{tabular}{|>{\bfseries}C{4.15cm}|C{4.32cm}|C{4.32cm}|C{4.32cm}|}
+\hline
+\rowcolor{headfill}\rule{0pt}{9.2mm}\raisebox{3.2mm}[0pt][0pt]{Working load} & \textbf{6 reps @ 40\%} & \textbf{4 reps @ 60\%} & \textbf{2 reps @ 80\%} \\
+\hline
+\rule[-3.6mm]{0pt}{9.2mm}2.5 kg & - & - & - \\
+\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}5 kg & 2.5 kg & 2.5 kg & 2.5 kg \\
+\rule[-3.6mm]{0pt}{9.2mm}7.5 kg & 5 kg & 5 kg & 5 kg \\
+\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}10 kg & 5 kg & 7.5 kg & 7.5 kg \\
+\rule[-3.6mm]{0pt}{9.2mm}12.5 kg & 5 kg & 7.5 kg & 10 kg \\
+\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}15 kg & 7.5 kg & 10 kg & 12.5 kg \\
+\rule[-3.6mm]{0pt}{9.2mm}17.5 kg & 7.5 kg & 12.5 kg & 15 kg \\
+\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}20 kg & 10 kg & 12.5 kg & 17.5 kg \\
+\rule[-3.6mm]{0pt}{9.2mm}22.5 kg & 10 kg & 15 kg & 20 kg \\
+\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}27.5 kg & 12.5 kg & 17.5 kg & 22.5 kg \\
+\rule[-3.6mm]{0pt}{9.2mm}30 kg & 12.5 kg & 20 kg & 27.5 kg \\
+\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}32.5 kg & 15 kg & 20 kg & 27.5 kg \\
+\rule[-3.6mm]{0pt}{9.2mm}35 kg & 15 kg & 22.5 kg & 30 kg \\
+\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}40 kg & 17.5 kg & 27.5 kg & 32.5 kg \\
+\rule[-3.6mm]{0pt}{9.2mm}45 kg & 20 kg & 27.5 kg & 40 kg \\
+\rowcolor{blockfill}\rule[-3.6mm]{0pt}{9.2mm}50 kg & 20 kg & 30 kg & 40 kg \\
+\hline
+\end{tabular}
+}
+\end{center}
+
+\vspace{0.24cm}
+\begin{center}
+\begin{minipage}{17.1cm}
+{\fontsize{6.55}{7.9}\selectfont\color{muted}
+Loads are per dumbbell. Repeated warm-up loads at low working weights are intentional; 2.5 kg has no lower warm-up load.
+}
+\end{minipage}
+\end{center}
+
+\end{document}
